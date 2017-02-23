@@ -1,97 +1,126 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Acid Test(Quick Ratio) Calculator</title>
+<title>Quick (Acid Test) Ratio Calculator</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 <style>
 body {
 	padding:20px auto;
 	text-align:center;
-	margin:0;
+	margin:12px 0;
 	background-color:PeachPuff;
+	font-family:Cambria Math;
 }
 div {
 
 }
 h1 {
 	background-color:lightblue;
-	padding:10px;
-	margin:0 0 20px 0;
+	padding:12px 10px 15px 10px;
+	margin:0;
+	border-bottom: 2px dotted PeachPuff;
+	border-top: 20px solid white;
 }
-p {
-	background-color: LightGoldenrodYellow;
-	height:40px; max-width:200px; 
-	overflow:auto; 
-	border:4px dashed PeachPuff;
-	text-align:center;
-	margin:0px auto;
-	padding:0;
-}
+
 h4 {
 	
 	padding:5px 0;
 	margin:0 0 -8px 0;
-	font-size:22px;	
+	font-size:18px;	
 	color:navy;
 }
 
 form {
 	margin:0;
 	padding:10px 0;
-}
-	
-	
-hr { 
-  padding: 0.3em 0;
- border-bottom: medium double #8c8c8c;
-  border-top: medium double #8c8c8c; 
-  color: #8c8c8c; 
-  text-align: center; 
-	background:aqua;
-	margin:80px 0 0 0;
-} 
-hr:after { 
-  content: "JavaScript Code"; 
-  display: inline-block; 
-  position: relative; 
-  color:aqua;
-  font-size: 1.2em; 
-  padding: 0.6em 1.55em; 
-  background: darkgrey; 
-border:thin solid aqua;
-	border-radius:50px;
-	
 	
 }
+
+input {
+	height: 20px;
+	margin:0 0 5px 0;
+	padding: 2px 10px;
+	font-size:16px;
+	border: 2px solid skyblue;
+	border-radius:15px;
+}
+	
+p {
+	font-size:18px;
+}
+.ratio {
+	background-color: lightblue;
+	 max-width:400px; 
+	overflow:auto; 
+	border:thin dashed PeachPuff;
+	text-align:center;
+	margin:0px auto;
+	padding:0;
+	border-radius:10px;
+}
+
+.ratform {
+	width:450px;
+	text-align:center;
+	margin:-15px auto 0 auto;
+	padding: 10px 0;
+	background-color:lightyellow;
+	
+	font-size:14px;
+	border-radius:20px;
+	border: 2px dotted PeachPuff;
+}
+
+.ratform h1 {
+	font-size:18px;
+	margin: 0 auto 10px auto;
+	}
+
+.ratform span {
+	color:red;
+	line-height:auto;
+	font-size:22px;
+	
+	}
 .code {
-	max-width:350px;
+	max-width:380px;
 	text-align:left;
-	margin:10px auto 0 auto;
-	padding: 10px 0 10px 60px;
+	margin:-15px auto 0 auto;
+	padding: 16px 0 10px 60px;
 	background-color:darkgrey;
 	color: white;
-	font-size:14px;
-	border-radius:50px;
-	border: 10px dashed PeachPuff;
+	font-size:12px;
+	border-radius:20px;
+	border: 2px dotted PeachPuff;
 	}
+	
 .code h3 {
-	color:aqua;
-	font-size:18px;
+	color:skyblue;
+	font-size:14px;
 	}
 </style>
 </head>
 <body>
-<h1>Acid Test Ratio</h1>
+<h1>Quick (Acid Test) Ratio </h1>
+<div class="ratform">
+
 <form>
-  <input id="assets" type="text" placeholder="Enter Assets" /><br />
-   <input id="inventory" type="text" placeholder="Enter Inventory" /><br />
-   <input id="liability" type="text" placeholder="Enter Liability" /><br />
+<p>Enter numerical values into each field</p>
+  <input id="assets" type="text" placeholder="a) Enter Assets" /><br />
+  <input id="inventory" type="text" placeholder="b) Enter Inventory" /><br />
+  <input id="liability" type="text" placeholder="c) Enter Liability" /><br />
     </form>
-    <br /><h4>Ratio: </h4><p id="ratio"></p> <br />   
+   <br />
+	<h1 class="ratio">Wikipedia Formula (3 values)<br />[a / c] : [b / c] : [c/c] <br /> <span id="wiki">Results</span><br /></h1>
+	<h1 class="ratio">Wikipedia Formula <br />[(a+b) / c] : [c/c] <br /><span id="form2">Results</span><br /></h1>
+	<h1 class="ratio">Bankrate Formula <br />[(a-b) / c] : [c/c] <br /> <span id="form1">Results</span><br /></h1>
 	
+	<p>Formulas derived from <a href="https://en.wikipedia.org/wiki/Quick_ratio" target="_blank">Wikipedia</a> and <a href="http://www.bankrate.com/calculators/business/quick-ratio.aspx" target="_blank">Bankrate</a>.</p>
+
+</div>	
 	<br /> <br /> <br /> 
-<hr>
+<h1>JavaScript Code</h1>
 <div class="code">
 <h3>script.js</h3>
 <code>
@@ -104,11 +133,20 @@ function calculateRatio() { <br>
 &nbsp;&nbsp;&nbsp;var b = parseInt($('#inventory').val()); <br>
 &nbsp;&nbsp;&nbsp;var c = parseInt($('#liability').val()); <br>
 <br>
-&nbsp;&nbsp;&nbsp;var d = (a / c) + ":"; <br>
-&nbsp;&nbsp;&nbsp;var e = (b / c) + ":"; <br>
-&nbsp;&nbsp;&nbsp;var f = 1; <br>
-<br>
-&nbsp;&nbsp;&nbsp;$('p#ratio').text(d+e+f); <br>
+&nbsp;&nbsp;&nbsp;var e = 1;
+   <br><br>
+&nbsp;&nbsp;&nbsp;// Wikipedia Formula<br>
+&nbsp;&nbsp;&nbsp;var d = ((a + b) / c) + ":"; <br>
+&nbsp;&nbsp;&nbsp;$('span#form2').text(d+e);<br>
+  <br>
+&nbsp;&nbsp;&nbsp;// Wikipedia Formula (3 values)<br>
+&nbsp;&nbsp;&nbsp;var g = (a / c) + ":"; <br>
+&nbsp;&nbsp;&nbsp;// var h = (b / c) + ":"; <br>
+&nbsp;&nbsp;&nbsp;$('span#wiki').text(g+h+e);<br>
+  <br>
+&nbsp;&nbsp;&nbsp;// Bankrate Formula<br>
+&nbsp;&nbsp;&nbsp;var f = ((a - b) / c) + ":";<br>
+&nbsp;&nbsp;&nbsp;$('span#form1').text(f+e);<br>
 }
 </code>
 <script type="text/javascript" src="script.js"></script>

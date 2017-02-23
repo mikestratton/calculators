@@ -8,10 +8,19 @@ function calculateRatio() {
   var b = parseInt($('#inventory').val());
   var c = parseInt($('#liability').val());  
 
-  var d = (a / c) + ":";
-  var e = (b / c) + ":";
-  var f = 1;
-
-  $('p#ratio').text(d+e+f);
+  var e = 1;
+   
+  // Wikipedia Formula
+  var d = ((a + b) / c) + ":"; 
+  $('span#form2').text(d+e);
+  
+  // Wikipedia Formula (3 values)
+  var g = (a / c) + ":"; 
+  var h = (b / c) + ":"; 
+  $('span#wiki').text(g+h+e);
+  
+  // Bankrate Formula
+  var f = ((a - b) / c) + ":";
+  $('span#form1').text(f+e);
 
 }
