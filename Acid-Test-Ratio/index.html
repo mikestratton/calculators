@@ -9,7 +9,7 @@ body {
 	padding:20px auto;
 	text-align:center;
 	margin:0;
-	background-color:ghostwhite;
+	background-color:PeachPuff;
 }
 div {
 
@@ -20,24 +20,25 @@ h1 {
 	margin:0 0 20px 0;
 }
 p {
-	background-color:PeachPuff; 
+	background-color: LightGoldenrodYellow;
 	height:40px; max-width:200px; 
 	overflow:auto; 
-	border:2px solid silver; 
+	border:4px dashed PeachPuff;
 	text-align:center;
 	margin:0px auto;
 	padding:0;
 }
 h4 {
-	background-color: LightGoldenrodYellow;
-	padding:12px 0;
-	margin:10px 0 -12px 0;
+	
+	padding:5px 0;
+	margin:0 0 -8px 0;
+	font-size:22px;	
+	color:navy;
 }
 
 form {
-	background-color: PeachPuff;
 	margin:0;
-	padding:20px 0;
+	padding:10px 0;
 }
 	
 	
@@ -54,17 +55,16 @@ hr:after {
   content: "JavaScript Code"; 
   display: inline-block; 
   position: relative; 
-  
+  color:aqua;
   font-size: 1.2em; 
   padding: 0.6em 1.55em; 
-  background: #fff; 
+  background: darkgrey; 
 border:thin solid aqua;
 	border-radius:50px;
 	
 	
 }
 .code {
-		
 	max-width:350px;
 	text-align:left;
 	margin:10px auto 0 auto;
@@ -73,7 +73,7 @@ border:thin solid aqua;
 	color: white;
 	font-size:14px;
 	border-radius:50px;
-	border: thick dashed white;
+	border: 10px dashed PeachPuff;
 	}
 .code h3 {
 	color:aqua;
@@ -83,7 +83,12 @@ border:thin solid aqua;
 </head>
 <body>
 <h1>Acid Test Ratio</h1>
-<br /><h4>Ratio: </h4><br /><p id="ratio"></p> <br />   
+<form>
+  <input id="assets" type="text" placeholder="Enter Assets" /><br />
+   <input id="inventory" type="text" placeholder="Enter Inventory" /><br />
+   <input id="liability" type="text" placeholder="Enter Liability" /><br />
+    </form>
+    <br /><h4>Ratio: </h4><p id="ratio"></p> <br />   
 	
 	<br /> <br /> <br /> 
 <hr>
