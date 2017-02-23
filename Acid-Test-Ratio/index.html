@@ -4,16 +4,110 @@
 <title>Acid Test(Quick Ratio) Calculator</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
+<style>
+body {
+	padding:20px auto;
+	text-align:center;
+	margin:0;
+	background-color:ghostwhite;
+}
+div {
+
+}
+h1 {
+	background-color:lightblue;
+	padding:10px;
+	margin:0 0 20px 0;
+}
+p {
+	background-color:PeachPuff; 
+	height:40px; max-width:200px; 
+	overflow:auto; 
+	border:2px solid silver; 
+	text-align:center;
+	margin:0px auto;
+	padding:0;
+}
+h4 {
+	background-color: LightGoldenrodYellow;
+	padding:12px 0;
+	margin:10px 0 -12px 0;
+}
+
+form {
+	background-color: PeachPuff;
+	margin:0;
+	padding:20px 0;
+}
+	
+	
+hr { 
+  padding: 0.3em 0;
+ border-bottom: medium double #8c8c8c;
+  border-top: medium double #8c8c8c; 
+  color: #8c8c8c; 
+  text-align: center; 
+	background:aqua;
+	margin:80px 0 0 0;
+} 
+hr:after { 
+  content: "JavaScript Code"; 
+  display: inline-block; 
+  position: relative; 
+  
+  font-size: 1.2em; 
+  padding: 0.6em 1.55em; 
+  background: #fff; 
+border:thin solid aqua;
+	border-radius:50px;
+	
+	
+}
+.code {
+		
+	max-width:350px;
+	text-align:left;
+	margin:10px auto 0 auto;
+	padding: 10px 0 10px 60px;
+	background-color:darkgrey;
+	color: white;
+	font-size:14px;
+	border-radius:50px;
+	border: thick dashed white;
+	}
+.code h3 {
+	color:aqua;
+	font-size:18px;
+	}
+</style>
 </head>
 <body>
 <h1>Acid Test Ratio</h1>
-    <input id="assets" type="text" /><br />
-    <input id="inventory" type="text" /><br />
-    <input id="liability" type="text" /><br />
-    
-    <br />Ratio: <br /><p id="ratio"></p> <br />   
+<br /><h4>Ratio: </h4><br /><p id="ratio"></p> <br />   
 	
-	
+	<br /> <br /> <br /> 
+<hr>
+<div class="code">
+<h3>script.js</h3>
+<code>
+$('#assets').keyup(calculateRatio); <br>
+$('#inventory').keyup(calculateRatio); <br>
+$('#liability').keyup(calculateRatio); <br>
+<br>
+function calculateRatio() { <br>
+&nbsp;&nbsp;&nbsp;var a = parseInt($('#assets').val()); <br>
+&nbsp;&nbsp;&nbsp;var b = parseInt($('#inventory').val()); <br>
+&nbsp;&nbsp;&nbsp;var c = parseInt($('#liability').val()); <br>
+<br>
+&nbsp;&nbsp;&nbsp;var d = (a / c) + ":"; <br>
+&nbsp;&nbsp;&nbsp;var e = (b / c) + ":"; <br>
+&nbsp;&nbsp;&nbsp;var f = 1; <br>
+<br>
+&nbsp;&nbsp;&nbsp;$('p#ratio').text(d+e+f); <br>
+}
+</code>
 <script type="text/javascript" src="script.js"></script>
+</div>
+
 </body>
 </html>
