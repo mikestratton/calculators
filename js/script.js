@@ -12,4 +12,15 @@ function calculateRatio() {
   var d = ((a - b) / c);
   var e = d.toFixed(2);
   $('span#quickratio').text(e);
+  
+  /** Current Ratio Calculator **/
+  var f = a / c;
+  var g = f.toFixed(2);
+  $('span#currentratio').text(g);
+  
+  /** Current Ratio Calculator **/
+  var h = (a / c) * 100;
+  var i = h.toFixed(2);
+  $('span#debtassets').text(i);
 }
+
