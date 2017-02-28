@@ -1,0 +1,70 @@
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	margin:0 ;
+}
+
+.container {
+	background-color:white;
+	width:264px;
+	height: auto;
+	border: 10px solid white;
+}
+.calc{
+	color:#5c5c5c;
+	background-color:#d7d7d7;
+	width:256px;
+	padding: 0;
+	border-radius:8px;
+    margin:0 auto;
+	
+}
+.calc p {
+	font-size:13px;
+	margin: 9px;
+	padding: 0 8px;
+}
+
+.calc h1 {
+	color:black;
+	font-size:15px;
+	font-weight:800;
+	background-color:#b7b7b7;
+	padding: 9px 18px;
+	margin: 0;
+	text-aligh:left;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.calc h2 {
+	font-size:19px;
+	color: #424242;
+	padding:12px 18px 22px 18px;
+	margin:-10px 0 0 0;
+	font-weight:800;
+}
+
+.calc form {
+	text-align:left;
+	margin-left: 16px;
+}
+
+.calc input {
+	font-size:12px;
+	width: 200px;
+	height:18px;
+	margin: 0 7px 14px auto;
+	padding:6px;
+	border:none;
+	border-radius:4px;
+}
+
+/** jquery display results **/
+.calc span {
+	background-color:#b7b7b7;
+	padding:2px 3px;
+	border-radius:3px;
+	margin:0 2px;
+	letter-spacing:4px;
+	weight:500;
+}
