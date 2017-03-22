@@ -16,7 +16,7 @@ p {
 }
 
 .row {
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .row .row {
@@ -40,17 +40,22 @@ hr {
 .page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
-  border-bottom: 1px solid #5ba63c;
+  border-bottom: 1px solid #b7b7b7;
 }
 
 .col-md-4 {
-	margin-left:auto;
-	margin-right:auto;
+	text-align:center;
+	border: 2px solid rgb(253, 255, 222);
+	border-radius:15px;
+	background-color: whitesmoke;
+	min-height:380px;
 }
 
 iframe {
 	min-height:330px;
 	border:none;
 	overflow:auto;
+	margin-top:15px;
+	margin-bottom:-15px;
 }
 
