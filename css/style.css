@@ -9,10 +9,10 @@ body {
 	height: auto;
 	border: 10px solid white;
 }
+
 .calc{
 	color:#5c5c5c;
 	background-color:#d7d7d7;
-	width:256px;
 	padding: 0;
 	border-radius:8px;
     margin:0 auto;

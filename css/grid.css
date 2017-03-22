@@ -1,0 +1,56 @@
+body {
+	margin:0 ;
+	background-color: rgb(253, 255, 222);
+}
+
+h1 {
+	text-align:center;
+}
+
+h4 {
+  margin-top: 25px;
+}
+
+p {
+	text-align:center;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.row .row {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+[class*="col-"] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+ 
+}
+
+hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #5ba63c;
+}
+
+
+.page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #5ba63c;
+}
+
+.col-md-4 {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+iframe {
+	min-height:330px;
+	border:none;
+	overflow:auto;
+}
+
