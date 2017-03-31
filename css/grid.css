@@ -1,5 +1,5 @@
 body {
-	margin:0 ;
+	margin:0 0 100px 0;
 	background-color: rgb(253, 255, 222);
 }
 
@@ -16,7 +16,9 @@ p {
 }
 
 .row {
-  margin-bottom: 0;
+  text-align:center;
+  width:100%;
+  margin: 0 auto;
 }
 
 .row .row {
@@ -44,15 +46,17 @@ hr {
 }
 
 .col-md-4 {
-	text-align:center;
-	border: 2px solid rgb(253, 255, 222);
-	border-radius:15px;
-	background-color: whitesmoke;
-	min-height:380px;
+  text-align: center;
+  border: 2px solid #6b7ab7;
+  border-radius: 15px;
+  background-color: whitesmoke;
+  min-height: 420px;
+  margin: 6px;
+  width: 32%;
 }
 
 iframe {
-	min-height:330px;
+	min-height:340px;
 	border:none;
 	overflow:auto;
 	margin-top:15px;

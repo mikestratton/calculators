@@ -2,31 +2,49 @@
 $('#assets').keyup(calculateRatio);
 $('#inventory').keyup(calculateRatio);
 $('#liability').keyup(calculateRatio);
+$('#interest').keyup(calculateRatio);
 
 function calculateRatio() {
 	
   var a = parseInt($('#assets').val());
   var b = parseInt($('#inventory').val());
-  var c = parseInt($('#liability').val());  
+  var c = parseInt($('#liability').val()); 
+  var x = parseInt($('#interest').val()); 
 
+   /** Quick Ratio **/
   var d = ((a - b) / c);
   var e = d.toFixed(2);
   $('span#quickratio').text(e);
   
-  /** Current Ratio Calculator **/
+  /** Current Ratio **/
   var f = a / c;
   var g = f.toFixed(2);
   $('span#currentratio').text(g);
   
-  /** Current Ratio Calculator **/
+  /** Debt to Assets **/
   var h = (a / c) * 100;
   var i = h.toFixed(2);
   $('span#debtassets').text(i);
   
-  /** Gross Profit Margin Calculator **/
+  /** Gross Profit Margin **/
   var j = (a - c) / a;
   var k = j.toFixed(2);
   $('span#grossprofit').text(k);
+  
+    /** Debt to Equity Ratio **/
+   var l = a / c;
+   var m = l.toFixed(2);
+   $('span#debtequity').text(m);
+   
+    /** Net Profit Margin **/
+  var n = (a / c) * 100;
+  var o = n.toFixed(2);
+  $('span#netmargin').text(o);
+  
+    /** Return on Equity **/
+  var p = (a - b - x) / c * 100; //(NET INCOME FOR THE YEAR - TAXES - INTEREST) / SHAREHOLDERS’ EQUITY
+  var q = p.toFixed(2);
+  $('span#returnequity').text(q);
 }
 
 /** Loan Payment Calculator **/
