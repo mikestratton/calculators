@@ -6,20 +6,75 @@ $('#interest').keyup(calculateRatio);
 
 function calculateRatio() {
 	
-  var a = parseInt($('#assets').val());
-  var b = parseInt($('#inventory').val());
-  var c = parseInt($('#liability').val()); 
-  var x = parseInt($('#interest').val()); 
+  var a = $('#assets').val();
+  var b = $('#inventory').val();
+  var c = $('#liability').val(); 
+  var x = $('#interest').val(); 
 
    /** Quick Ratio **/
   var d = ((a - b) / c);
   var e = d.toFixed(2);
+  
+  if(e < 1.0)
+  {
+    $("p#qr-message").css("color", "white");
+    $("p#qr-message").css("background-color", "red");
+    $("p#qr-message").css("padding", "10px");
+    $("p#qr-message").css("margin", "11px 15px");
+    $('p#qr-message').html('BELOW AVERAGE<br>There may not be enough money coming in to meet short-term liabilities which could lead to cash flow problems later on.');
+  }  
+  
+  if(e >= 1.0 && e <= 1.5)
+  {
+    $("p#qr-message").css("color", "white");
+    $("p#qr-message").css("background-color", "blue");
+    $("p#qr-message").css("padding", "10px");
+    $("p#qr-message").css("margin", "11px 15px");
+    $('p#qr-message').html('AVERAGE<br>This is the ratio most businesses fit into.');
+  }
+  
+  if(e > 1.5)
+  {
+    $("p#qr-message").css("color", "white");
+    $("p#qr-message").css("background-color", "green");
+    $("p#qr-message").css("padding", "10px");
+    $("p#qr-message").css("margin", "11px 15px");
+    $('p#qr-message').html('ABOVE AVERAGE<br>This is acceptable but could indicate that there are savings that might otherwise be used to invest in the business.');
+  }
+  
   $('span#quickratio').text(e);
   
   /** Current Ratio **/
   var f = a / c;
   var g = f.toFixed(2);
   $('span#currentratio').text(g);
+  
+  if(g < 1.5)
+  {
+    $("p#qr-message").css("color", "white");
+    $("p#qr-message").css("background-color", "red");
+    $("p#qr-message").css("padding", "10px");
+    $("p#qr-message").css("margin", "11px 15px");
+    $('p#qr-message').html('BELOW AVERAGE<br>Could indicate possible cash flow issues especially if the value of stocks is high.');
+  }  
+  
+  if(g >= 1.5 && g <= 3.0)
+  {
+    $("p#qr-message").css("color", "white");
+    $("p#qr-message").css("background-color", "blue");
+    $("p#qr-message").css("padding", "10px");
+    $("p#qr-message").css("margin", "11px 15px");
+    $('p#qr-message').html('AVERAGE<br>Though acceptable ratios may vary from industry to industry, a current ratio of 2.00:1 is considered the norm.');
+  }
+  
+  if(g > 3.0)
+  {
+    $("p#qr-message").css("color", "white");
+    $("p#qr-message").css("background-color", "green");
+    $("p#qr-message").css("padding", "10px");
+    $("p#qr-message").css("margin", "11px 15px");
+    $('p#qr-message').html('ABOVE AVERAGE<br>This may indicate problems in the management of working capital.');
+  }
   
   /** Debt to Assets **/
   var h = (a / c) * 100;
@@ -55,9 +110,9 @@ $('#rate').keyup(loanPayment);
 
 
 function loanPayment() {
-	var l = parseInt($('#principal').val());
-	var m = parseInt($('#months').val());
-	var n = parseInt($('#rate').val());
+	var l = $('#principal').val();
+	var m = $('#months').val();
+	var n = $('#rate').val();
 	var intr = n / 1200;
 	var o = (l * intr) / (1 - (Math.pow(1/(1 + intr), m)));
 	var p = o.toFixed(2);

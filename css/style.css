@@ -40,7 +40,7 @@ body {
 	font-size:19px;
 	color: #424242;
 	padding:12px 18px 22px 18px;
-	margin:-10px 0 0 0;
+	margin:-10px 0;
 	font-weight:800;
 }
 
@@ -67,4 +67,10 @@ body {
 	margin:0 2px;
 	letter-spacing:4px;
 	weight:500;
+}
+
+.msg {
+  padding:8px;
+  margin:12px;
+  border-radius:8px;
 }
