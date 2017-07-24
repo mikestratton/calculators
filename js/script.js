@@ -16,9 +16,9 @@ function calculateRatio() {
   var d = ((a - b) / c);
   var e = d.toFixed(2);
 
-  $('span#currentratio').text(e);
+  $('span#quickratio').text(e);
 
-  
+
   /** Current Ratio **/
   var f = a / c;
   var g = f.toFixed(2);
