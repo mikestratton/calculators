@@ -1,5 +1,6 @@
 /** Inputs for Multiple Calculator **/
-$('#assets').keyup(calculateRatio);
+var assets = document.getElementById("assets");
+// $('#assets').keyup(calculateRatio);
 $('#inventory').keyup(calculateRatio);
 $('#liability').keyup(calculateRatio);
 $('#interest').keyup(calculateRatio);
@@ -7,13 +8,13 @@ $('#interest').keyup(calculateRatio);
 
 function calculateRatio() {
 	
-  var a = $('#assets').val();
+  // var a = $('#assets').val();
   var b = $('#inventory').val();
   var c = $('#liability').val(); 
   var x = $('#interest').val(); 
 
    /** Quick Ratio **/
-  var d = ((a - b) / c);
+  var d = ((assets - b) / c);
   var e = d.toFixed(2);
 
   $('span#quickratio').text(e);
