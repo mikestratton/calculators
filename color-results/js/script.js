@@ -4,7 +4,6 @@ $('#inventory').keyup(calculateRatio);
 $('#liability').keyup(calculateRatio);
 $('#interest').keyup(calculateRatio);
 
-
 function calculateRatio() {
 	
   var a = $('#assets').val();
@@ -15,9 +14,43 @@ function calculateRatio() {
    /** Quick Ratio **/
   var d = ((a - b) / c);
   var e = d.toFixed(2);
-
-  $('span#currentratio').text(e);
-
+ 
+  var qrTotal = $('#quickratio').val(); //get total from html
+ 
+  if(qrTotal < 1.0)
+  {
+    $("p#qr-message").css("color", "white");
+    $("p#qr-message").css("background-color", "red");
+    $("p#qr-message").css("padding", "10px");
+    $("p#qr-message").css("margin", "11px 15px");
+    $('p#qr-message').html('BELOW AVERAGE<br>There may not be enough money coming in to meet short-term liabilities which could lead to cash flow problems later on.');
+  }  
+  
+  if(qrTotal >= 1.0 && d <= 1.5)
+  {
+    $("p#qr-message").css("color", "white");
+    $("p#qr-message").css("background-color", "blue");
+    $("p#qr-message").css("padding", "10px");
+    $("p#qr-message").css("margin", "11px 15px");
+    $('p#qr-message').html('AVERAGE<br>This is the ratio most businesses fit into.');
+  }
+  
+  if(qrTotal > 1.5)
+  {
+    $("p#qr-message").css("color", "white");
+    $("p#qr-message").css("background-color", "green");
+    $("p#qr-message").css("padding", "10px");
+    $("p#qr-message").css("margin", "11px 15px");
+    $('p#qr-message').html('ABOVE AVERAGE<br>This is acceptable but could indicate that there are savings that might otherwise be used to invest in the business.');
+  }
+  
+  else
+  {
+ 
+    $('p#qr-message').html('&nbsp;');
+  }
+  
+  
   
   /** Current Ratio **/
   var f = a / c;

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Loan Payment Calculator</title>
+<title>Gross Profit Margin Calculator</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -16,18 +16,18 @@
 <div class="container">
 <div class="calc">
 <h1>
-Loan Payment Calculator
+Gross Profit Margin Calculator
 </h1>
-<p>Enter amounts below to calculate your monthly payment</p>
+<p>Enter amounts below for your ratio</p>
 <form>
 
 
-  <input id="principal" type="text" placeholder="Loan Amount: " /><br />  
-  <input id="months" type="text" placeholder="Loan term in months: " /><br />
-  <input id="rate" type="text" placeholder="Interest rate (For example: 4.5)" /><br />
+  <input id="assets" type="text" placeholder="Sales:" /><br />
+  
+  <input id="liability" type="text" placeholder="Cost of Goods Sold:" /><br />
     </form>
 	
-	<h2>Monthly Loan Payment <br />$<span id="payment"></span></h2>
+	<h2>Gross Profit Margin Ratio <br />=<span id="grossprofit">-.--</span>:1</h2>
 	
 </div>
 </div>
