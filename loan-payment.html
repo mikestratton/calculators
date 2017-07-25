@@ -21,19 +21,21 @@ Loan Payment Calculator
 <p>Enter amounts below to calculate your monthly payment</p>
 <form>
 
+    <input name="num1" id="num1" type="text" placeholder="Loan Amount: "   /><br />
+    <input name="num2" id="num2" type="text" placeholder="Loan term in months: "  /><br />
+    <input name="num3" id="num3" type="text" placeholder="Interest rate (For example: 4.5)" /><br />
+    <h2>Monthly Loan Payment</h2>
+    <input type="text" name="loanpayment" id="loanpayment" readonly />
 
-  <input id="principal" type="text" placeholder="Loan Amount: " /><br />  
-  <input id="months" type="text" placeholder="Loan term in months: " /><br />
-  <input id="rate" type="text" placeholder="Interest rate (For example: 4.5)" /><br />
-    </form>
+</form>
 	
-	<h2>Monthly Loan Payment <br />$<span id="payment"></span></h2>
+
 	
 </div>
 </div>
 
 
 
-<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/loan_payment.js"></script>
 </body>
 </html>

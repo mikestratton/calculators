@@ -19,21 +19,23 @@
 Debt to Assets Calculator
 </h1>
 <p>Enter amounts below for your ratio</p>
+
+
 <form>
 
+    <input name="num1" id="num1" type="text" placeholder="Current Assets:" /><br />
+    <input name="num2" id="num2" type="text" placeholder="Current Liabilities:" /><br />
+    <h2>Debt to Assets</h2>
+    <input type="text" name="debtassets" id="debtassets" readonly />
 
-  <input id="assets" type="text" placeholder="Total Debt:" /><br />
-  
-  <input id="liability" type="text" placeholder="Total Assets:" /><br />
-    </form>
-	
-	<h2>Debt to Assets <br />=<span id="debtassets"></span>%</h2>
+</form>
+
 	
 </div>
 </div>
 
 
 
-<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/debt_to_assets.js"></script>
 </body>
 </html>

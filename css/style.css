@@ -4,11 +4,9 @@ body {
 }
 
 .container {
-	
 	width:264px;
 	height: auto;
-  margin: auto;
-	
+	margin: auto;
 }
 
 .calc{
@@ -16,13 +14,12 @@ body {
 	background-color:#d7d7d7;
 	padding: 0;
 	border-radius:8px;
-  margin: auto;
-	min-height:300px;
+	margin: auto;
 }
 .calc p {
 	font-size:13px;
-	margin: 9px;
-	padding: 0 8px;
+	margin: 9px 12px;
+	padding: 0 18px;
 }
 
 .calc h1 {
@@ -32,29 +29,31 @@ body {
 	background-color:#b7b7b7;
 	padding: 9px 18px;
 	margin: 0;
-	text-aligh:left;
+	text-align:center;
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
 }
 
 .calc h2 {
-	font-size:19px;
+	font-size:16px;
 	color: #424242;
-	padding:12px 18px 22px 18px;
-	margin:-10px 0;
+	padding:6px 0 0 30px;
+	margin:0;
 	font-weight:800;
+	text-align:left;
 }
 
 .calc form {
-	text-align:left;
-	margin-left: 16px;
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .calc input {
 	font-size:12px;
 	width: 200px;
 	height:18px;
-	margin: 0 7px 14px auto;
+	margin: 0 auto 14px auto;
 	padding:6px;
 	border:none;
 	border-radius:4px;

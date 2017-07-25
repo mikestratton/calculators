@@ -20,20 +20,19 @@ Return on Assets Ratio Calculator
 </h1>
 <p>Enter amounts below for your ratio</p>
 <form>
+    <input name="num1" id="num1" type="text" placeholder="Net Income:"  /><br />
+    <input name="num2" id="num2" type="text" placeholder="Total Assets:" /><br />
 
+    <h2>Return on Assets</h2>
 
-  <input id="assets" type="text" placeholder="Net Income:" /><br />
-  
-  <input id="liability" type="text" placeholder="Total Assets:" /><br />
-    </form>
-	
-	<h2>Return on Assets Ratio <br />=<span id="currentratio">-.--</span>:1</h2>
+    <input type="text" name="returnassets" id="returnassets" readonly />
+</form>
 	
 </div>
 </div>
 
 
 
-<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/return_assets.js"></script>
 </body>
 </html>
