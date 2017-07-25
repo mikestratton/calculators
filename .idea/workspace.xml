@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="329a72f0-960c-42de-a92e-ceaf4993d242" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/return_equity.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/color-results/return-on-equity.html" afterPath="$PROJECT_DIR$/color-results/return-on-equity.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/current-ratio.html" afterPath="$PROJECT_DIR$/current-ratio.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/debt-to-assets.html" afterPath="$PROJECT_DIR$/debt-to-assets.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/debt-to-equity.html" afterPath="$PROJECT_DIR$/debt-to-equity.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gross-profit-margin.html" afterPath="$PROJECT_DIR$/gross-profit-margin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/current_ratio.js" afterPath="$PROJECT_DIR$/js/current_ratio.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/debt_to_assets.js" afterPath="$PROJECT_DIR$/js/debt_to_assets.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/debt_to_equity.js" afterPath="$PROJECT_DIR$/js/debt_to_equity.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/gross_profit_margin.js" afterPath="$PROJECT_DIR$/js/gross_profit_margin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/return-on-assets.html" afterPath="$PROJECT_DIR$/return-on-assets.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/return-on-equity.html" afterPath="$PROJECT_DIR$/return-on-equity.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,11 +34,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="debt-to-equity.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="debt-to-equity.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/debt-to-equity.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="418">
               <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -259,10 +257,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14578000" />
+    <option name="totallyTimeSpent" value="14609000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1034" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -271,7 +270,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21286032" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21286032" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -560,6 +559,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
