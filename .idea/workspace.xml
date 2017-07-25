@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="329a72f0-960c-42de-a92e-ceaf4993d242" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/loan_payment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/net_profit.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loan-payment.html" afterPath="$PROJECT_DIR$/loan-payment.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net-profit-margin.html" afterPath="$PROJECT_DIR$/net-profit-margin.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,28 +19,28 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="67" selection-end-column="25" />
+            <state relative-caret-position="320">
+              <caret line="44" column="10" lean-forward="true" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loan_payment.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/loan_payment.js">
+      <file leaf-file-name="net_profit.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/net_profit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="24" column="35" lean-forward="false" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+            <state relative-caret-position="374">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gross-profit-margin.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gross-profit-margin.html">
+      <file leaf-file-name="net-profit-margin.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/net-profit-margin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="26" selection-end-column="70" />
+            <state relative-caret-position="297">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -76,6 +76,8 @@
         <option value="$PROJECT_DIR$/js/gross_profit_margin.js" />
         <option value="$PROJECT_DIR$/js/loan_payment.js" />
         <option value="$PROJECT_DIR$/loan-payment.html" />
+        <option value="$PROJECT_DIR$/net-profit-margin.html" />
+        <option value="$PROJECT_DIR$/js/net_profit.js" />
       </list>
     </option>
   </component>
@@ -247,12 +249,12 @@
       <option name="presentableId" value="Default" />
       <updated>1500923772378</updated>
       <workItem from="1500923776514" duration="9321000" />
-      <workItem from="1500953646254" duration="1341000" />
+      <workItem from="1500953646254" duration="1716000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10662000" />
+    <option name="totallyTimeSpent" value="11037000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1034" extended-state="6" />
@@ -430,14 +432,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="67" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/loan-payment.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -458,6 +452,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
           <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="26" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="44" column="10" lean-forward="true" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net-profit-margin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/net_profit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>

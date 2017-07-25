@@ -22,18 +22,21 @@ Net Profit Margin Calculator
 <form>
 
 
-  <input id="assets" type="text" placeholder="Total Liabilities:" /><br />
-  
-  <input id="liability" type="text" placeholder="Shareholder's Equity:" /><br />
-    </form>
+    <input name="num1" id="num1" type="text" placeholder="Total Liabilities:"  /><br />
+    <input name="num2" id="num2" type="text" placeholder="Shareholder's Equity:"  /><br />
+
+    <h2>Net Profit Margin</h2>
+
+    <input type="text" name="netprofit" id="netprofit" readonly />
+</form>
 	
-	<h2>Net Profit Margin <br />=<span id="netmargin"></span>%</h2>
+
 	
 </div>
 </div>
 
 
 
-<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/net_profit.js"></script>
 </body>
 </html>
