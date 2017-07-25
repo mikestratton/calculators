@@ -19,21 +19,23 @@
 Debt to Equity Ratio Calculator
 </h1>
 <p>Enter amounts below for your ratio</p>
+
 <form>
 
+    <input name="num1" id="num1" type="text" placeholder="Total Liabilities:" /><br />
+    <input name="num2" id="num2" type="text" placeholder="Shareholder's Equity:"  /><br />
+    <!--<h2>Debt to Assets <br />=<span id="grossprofit">-.&#45;&#45;</span>:1</h2>-->
+    <input type="text" name="debtequity" id="debtequity" readonly />
 
-  <input id="assets" type="text" placeholder="Total Liabilities:" /><br />
-  
-  <input id="liability" type="text" placeholder="Shareholder's Equity:" /><br />
-    </form>
-	
-	<h2>Debt to Equity <br />=<span id="debtequity"></span>:1</h2>
-	
+</form>
+
+
+
 </div>
 </div>
 
 
 
-<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/debt_to_equity.js"></script>
 </body>
 </html>

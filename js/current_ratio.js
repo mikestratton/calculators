@@ -1,19 +1,20 @@
 $(document).ready(function() {
-    //this calculates values automatically
-    sum();
+
+    currentratio();
+
     $("#num1, #num2").on("keydown keyup", function() {
-        sum();
+        currentratio();
     });
+
 });
 
-function sum() {
+function currentratio() {
     var num1 = document.getElementById('num1').value;
     var num2 = document.getElementById('num2').value;
     var result = parseInt(num1) / parseInt(num2);
-    var re_two = result.toFixed(2);
+    var rfixed = result.toFixed(2);
 
-    if (!isNaN(re_two)) {
-        document.getElementById('sum').value = result;
-
+    if (!isNaN(rfixed)) {
+        document.getElementById('currentratio').value = rfixed;
     }
 }

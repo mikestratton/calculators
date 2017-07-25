@@ -24,33 +24,7 @@ function calculateRatio() {
   var f = a / c;
   var g = f.toFixed(2);
   $('span#currentratio').text(g);
-  
-  if(f < 1.5)
-  {
-    $("p#qr-message").css("color", "white");
-    $("p#qr-message").css("background-color", "red");
-    $("p#qr-message").css("padding", "10px");
-    $("p#qr-message").css("margin", "11px 15px");
-    $('p#qr-message').html('BELOW AVERAGE<br>Could indicate possible cash flow issues especially if the value of stocks is high.');
-  }  
-  
-  if(f >= 1.5 && f <= 3.0)
-  {
-    $("p#qr-message").css("color", "white");
-    $("p#qr-message").css("background-color", "blue");
-    $("p#qr-message").css("padding", "10px");
-    $("p#qr-message").css("margin", "11px 15px");
-    $('p#qr-message').html('AVERAGE<br>Though acceptable ratios may vary from industry to industry, a current ratio of 2.00:1 is considered the norm.');
-  }
-  
-  if(f > 3.0)
-  {
-    $("p#qr-message").css("color", "white");
-    $("p#qr-message").css("background-color", "green");
-    $("p#qr-message").css("padding", "10px");
-    $("p#qr-message").css("margin", "11px 15px");
-    $('p#qr-message').html('ABOVE AVERAGE<br>This may indicate problems in the management of working capital.');
-  }
+
   
   /** Debt to Assets **/
   var h = (a / c) * 100;
