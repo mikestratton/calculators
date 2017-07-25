@@ -12,24 +12,29 @@
 <div class="container">
 <div class="calc">
 <h1>
-Operating Profit Percentage Calculator
+Operating Profit Calculator
 </h1>
 <p>Enter amounts below for your ratio</p>
 <form>
 
 
-  <input id="assets" type="text" placeholder="Operating Income:" /><br />
-  
-  <input id="liability" type="text" placeholder="Sales:" /><br />
-    </form>
+
+    <input name="num1" id="num1" type="text" placeholder="Operating Income:"  /><br />
+    <input name="num2" id="num2" type="text" placeholder="Sales:"  /><br />
+
+    <h2>Operating Profit</h2>
+
+    <input type="text" name="operatingprofit" id="operatingprofit" readonly />
+
+</form>
 	
-	<h2>Operating Profit Percentage <br />=<span id="debtassets"></span>%</h2>
+
 	
 </div>
 </div>
 
 
 
-<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/operating_profit.js"></script>
 </body>
 </html>
