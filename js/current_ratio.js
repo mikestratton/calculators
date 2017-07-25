@@ -13,8 +13,9 @@ function currentratio() {
     var num2 = document.getElementById('num2').value;
     var result = parseInt(num1) / parseInt(num2);
     var rfixed = result.toFixed(2);
+    var rtext = ':1';
 
     if (!isNaN(rfixed)) {
-        document.getElementById('currentratio').value = rfixed;
+        document.getElementById('currentratio').value = rfixed + rtext;
     }
 }

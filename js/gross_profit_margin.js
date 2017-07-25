@@ -12,8 +12,9 @@ function grossprofit() {
     var num2 = document.getElementById('num2').value;
     var result = (parseInt(num1) - parseInt(num2)) / (parseInt(num1));
     var rfixed = result.toFixed(2);
+    var rtext = ':1';
 
     if (!isNaN(rfixed)) {
-        document.getElementById('grossprofit').value = rfixed;
+        document.getElementById('grossprofit').value = rfixed + rtext;
     }
 }

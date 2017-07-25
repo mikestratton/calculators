@@ -19,25 +19,23 @@
 Return on Equity Calculator
 </h1>
 <p>Enter amounts below for your ratio</p>
+
 <form>
+  <input name="num1" id="num1" type="text" placeholder="Net Income for the Year::"  /><br />
+  <input name="num2" id="num2" type="text" placeholder="Taxes:" /><br />
+  <input name="num3" id="num3" type="text" placeholder="Interest:" /><br />
+  <input name="num4" id="num4" type="text" placeholder="Shareholder's Equity:" /><br />
 
+  <h2>Return on Equity</h2>
 
-  <input id="assets" type="text" placeholder="Net Income for the Year:" /><br />
-  
-  <input id="inventory" type="text" placeholder="Taxes:" /><br />
-  
-  <input id="interest" type="text" placeholder="Interest:" /><br />
-  
-  <input id="liability" type="text" placeholder="Shareholder's Equity:" /><br />
-    </form>
-	
-	<h2>Return on Equity <br />=<span id="returnequity"></span>%</h2>
-	
+  <input type="text" name="returnequity" id="returnequity" readonly />
+</form>
+
 </div>
 </div>
 
 
 
-<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/return_equity.js"></script>
 </body>
 </html>
