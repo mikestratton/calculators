@@ -15,6 +15,6 @@ function debttoequity() {
     var rtext = ':1';
 
     if (!isNaN(rfixed)) {
-        document.getElementById('debtequity').value = rfixed;
+        document.getElementById('debtequity').value = rfixed + rtext;
     }
 }
