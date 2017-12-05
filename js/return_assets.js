@@ -13,9 +13,10 @@ function returnassets() {
     var num2 = document.getElementById('num2').value;
     var result = parseInt(num1) / parseInt(num2);
     var rfixed = result.toFixed(2);
-    var rtext = ':1';
+    var percent = rfixed * 100;
+    var rtext = '%';
 
     if (!isNaN(rfixed)) {
-        document.getElementById('returnassets').value = rfixed + rtext;
+        document.getElementById('returnassets').value = percent + rtext;
     }
 }
